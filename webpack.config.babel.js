@@ -46,6 +46,5 @@ module.exports = {
       new HtmlWebpackPlugin({template: "./index.html", inject: true,}),
       new MiniCssExtractPlugin(),
       new OptimizeCssAssetsPlugin()
-    ],
-    watch: true
+    ]
 };
