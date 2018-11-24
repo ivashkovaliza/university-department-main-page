@@ -1,5 +1,4 @@
 @media (max-width: 540px) {
-
   .footer__address {
     max-width: 280px;
   }
@@ -119,9 +118,7 @@
   }
 }
 
-
 @media (min-width: 720px) {
-
   .footer__address {
     max-width: 300px;
   }
@@ -175,12 +172,11 @@
   }
 }
 
-
 @mixin link($text-decoration, $color, $color-hover) {
     cursor: pointer;
     text-decoration: $text-decoration;
-
     color: $color;
+
     &:hover {
       color: $color-hover;
     }
@@ -232,10 +228,10 @@
   text-align: center;
 }
 .h5 {
+  margin-top: 5px;
   font-size: 14px;
   font-weight: 400;
   color: $grey-dark;
-  margin-top: 5px;
   text-align: center;
   padding: 0 20px;
 }
@@ -247,16 +243,15 @@
 }
 
 /*Styles header*/
-
 .header {
   &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     padding: 0 20px;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     box-sizing: border-box;
   }
 
@@ -269,11 +264,11 @@
     }
 
     &:nth-child(2) {
-      padding-bottom: 10px;
-      padding-top: 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding-bottom: 10px;
+      padding-top: 10px;
     }
   }
 
@@ -330,9 +325,9 @@
   justify-content: flex-end;
 
   &__item {
+    margin-right: 15px;
     text-transform: uppercase;
     font-size: 16px;
-    margin-right: 15px;
     font-weight: 600;
     list-style: none;
 
@@ -351,7 +346,6 @@
 }
 
 /*Styles drop-down menu*/
-
 .burger-menu {
   justify-content: flex-end;
   font-size: 30px;
@@ -382,27 +376,25 @@
 }
 
 /*Styles slider*/
-
 .slider {
-
   .shadow {
-    background-color: $color-black;
-    opacity: 0.3;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
+    background-color: $color-black;
+    opacity: 0.3;
   }
 
   &__wrapper {
-    max-width: 1200px;
-    width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
   }
 
   &__slide {
@@ -454,12 +446,11 @@
 }
 
 /*Styles information about*/
-
 .info-about {
-  min-height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 200px;
 
   &__wrapper {
     max-width: 1200px;
@@ -475,11 +466,10 @@
 }
 
 .researches{
-
   &__content {
-    padding-top: 30px;
     display: flex;
     flex-direction: column;
+    padding-top: 30px;    
   }
 
   &-list {
@@ -497,13 +487,13 @@
   }
 
   .research-icon-bg {
-    height: 60px;
-    width: 60px;
-    background-color: #182e6a;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 60px;
+    width: 60px;
+    background-color: #182e6a;
     font-size: 30px;
   }
 
@@ -513,24 +503,23 @@
   }
 
   .research-name-bg {
-    height: 60px;
-    background-color: $color-main;
-    opacity: 0.68;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    height: 60px;
+    background-color: $color-main;
+    opacity: 0.68;
   }
 
   .research-name {
-    color: $color-white;
     margin-left: 65px;
+    color: $color-white;
     line-height: 18px;
   }
 }
 
 /*Styles contacts*/
-
 .contacts {
   margin-top: 30px;
 }
@@ -576,13 +565,13 @@
   align-items: center;
 
   &__btn {
+    margin: 40px 0;
+    padding: 7px 25px;
     border: solid $color-main 2px;
     background: none;
     font-size: 22px;
     text-transform: uppercase;
     color: $color-main;
-    padding: 7px 25px;
-    margin: 40px 0;
 
     &:hover {
       background-color: $color-main;
@@ -591,10 +580,10 @@
   }
 
   &__fields {
-    margin-top: 40px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 40px;
   }
 
   .user-info {
@@ -614,15 +603,15 @@
     padding: 0 15px;
 
     &__text {
+      height: 143px;
       resize: none;
       font-family: 'Open Sans', sans-serif;
-      height: 143px;
     }
   }
 
   &__label {
-    font-size: 22px;
     margin-right: 15px;
+    font-size: 22px;
 
     &:after {
       content: '*';
@@ -631,12 +620,12 @@
   }
 
   &__input {
+    width: 280px;
+    padding: 5px 10px;
+    box-sizing: border-box;
     border: none;
     border-bottom: solid $grey 1px;
-    font-size: 18px;
-    width: 280px;
-    box-sizing: border-box;
-    padding: 5px 10px;
+    font-size: 18px;    
   }
 }
 
@@ -645,18 +634,21 @@
 }
 
 /*Styles socials*/
-
 .socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 30px 20px;
   min-height: 120px;
   background: url("../img/socials-bg.jpg") no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
   .link {
     @include link(none, $color-black, $color-black);
+    width: 43px;
+    height: 43px;
+    padding-top: 10px;
+    text-align: center;
   }
 
   .h2 {
@@ -669,14 +661,14 @@
     margin-top: 20px;
 
     &__item {
-      width: 45px;
-      height: 45px;
-      background-color: $color-white;
-      font-size: 30px;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-right: 16px;
+      width: 45px;
+      height: 45px;
+      background-color: $color-white;
+      font-size: 30px;
       color: $color-black;
 
       &:hover {
@@ -690,26 +682,24 @@
   }
 }
 
-
 /*Styles footer*/
-
 .footer {
-  background-color: $color-main;
-  color: $color-white;
-  font-size: 14px;
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
+  background-color: $color-main;
+  color: $color-white;
+  font-size: 14px;
 
   &__wrapper {
-    padding: 20px;
-    box-sizing: border-box;
     display: flex;
+    justify-content: space-around;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    justify-content: space-around;
+    padding: 20px;
+    box-sizing: border-box;    
   }
 
   .logo {
